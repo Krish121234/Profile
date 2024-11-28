@@ -1,47 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
     <style>
-        body {
-            font-family: 'Roboto', sans-serif;
+        /* General Styles */
+        html, body {
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
+            height: 100%;
+            overflow: auto; /* Allow scrolling */
+            font-family: 'Roboto', sans-serif;
+            box-sizing: border-box;
         }
-        .container {
-            max-width: 600px;
-            text-align: center;
+
+        body {
+            background-color: #1f1f1f; /* Dark grey background */
+            color: #ffffff; /* White text */
             padding: 20px;
-            background: #ffffff;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start; /* Content starts from the top */
         }
+
         h1 {
-            font-size: 2rem;
-            color: #2c3e50;
-            margin-bottom: 10px;
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #00b4d8; /* A pleasant cyan for the title */
         }
+
         p {
-            font-size: 1rem;
+            font-size: 18px;
             line-height: 1.6;
+            margin: 10px 0;
+            text-align: justify; /* Easier to read */
+        }
+
+        /* Container for content */
+        .content {
+            max-width: 800px; /* Limit width for readability */
+            width: 90%;
+        }
+
+        /* Media query for larger screens */
+        @media (min-width: 768px) {
+            h1 {
+                font-size: 42px;
+            }
+
+            p {
+                font-size: 20px;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="content">
         <h1>About Me</h1>
         <p>
-            Hi! I’m <strong>Krish Bhoite</strong>, a curious and driven individual passionate about technology, coding, and constantly learning new things. I’ve just graduated high school and am preparing for university, where I plan to dive deep into computer science.
+            Hello! My name is Krish Bhoite, and I'm an 18-year-old student on an exciting journey of self-discovery and growth. 
+            After graduating high school in 2024, I decided to take a gap year to prepare for university and focus on my passion 
+            for coding, programming, and artificial intelligence. My dream is to create impactful technology and contribute to 
+            the world of machine learning and innovation.
         </p>
         <p>
-            In my free time, I enjoy exploring programming, honing my creative skills, and working on projects that challenge me. I’m also a big fan of books, especially classic novels, and I love discovering new ideas through reading. Whether it’s solving a tough problem or picking up new hobbies, I’m always looking for ways to grow and improve.
+            Apart from studying, I enjoy reading philosophical and classic novels, experimenting with coding projects, and sharing 
+            my study sessions online to inspire and connect with like-minded learners. I'm always looking for ways to grow, whether 
+            it's improving my technical skills, sharpening my focus, or building meaningful communities where people can learn and 
+            thrive together.
+        </p>
+        <p>
+            Thank you for visiting my website! Feel free to explore and learn more about my work and interests.
         </p>
     </div>
 </body>
